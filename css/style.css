@@ -819,7 +819,7 @@ header.smaller #mainmenu>li::before{
 
 
 #mainmenu>li::before {
-  content: counter(my-awesome-counter) ' —';
+  /* content: counter(my-awesome-counter) ' —'; */
   right: 8px;
   top: 5px;
   color:var(--primary-color);

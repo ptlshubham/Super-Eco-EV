@@ -1,5 +1,5 @@
  /* --------------------------------------------------
-  * © Copyright 2024 - Autoev by Designesia
+  * © Copyright 2024 - Super Eco Automotive Co. All rights reserved.
   * --------------------------------------------------*/
 (function($) {
 	'use strict';
