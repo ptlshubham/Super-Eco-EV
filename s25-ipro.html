@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <title>Homepage | Supereco | Electric Vehicle EV</title>
+    <link rel="icon" href="images/favicon.ico" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Homepage | Supereco | Electric Vehicle EV" name="description">
+    <meta content="" name="keywords">
+    <meta content="" name="author">
+    <meta property="og:image" content="img/apple-touch-icon.png">
+    <meta property="og:url" content="img/apple-touch-icon.png">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <!-- CSS Files
+    ================================================== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="css/plugins.css" rel="stylesheet" type="text/css">
+    <link href="css/swiper.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/coloring.css" rel="stylesheet" type="text/css">
+    <link href="css/swiper-custom.css" rel="stylesheet" type="text/css">
+
+    <!-- color scheme -->
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css">
+    <style>
+        .d-content {
+            position: absolute;
+            top: -70px;
+            /* Default position */
+            left: 25px;
+            /* Default position */
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 8px;
+            min-width: 140px;
+            max-width: 200px;
+            font-size: 12px;
+            z-index: 10;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+            pointer-events: none;
+        }
+
+        /* Show tooltip */
+        .de-dot:hover .d-content,
+        .de-dot.show-tooltip .d-content {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+
+        /* Flip left */
+        .d-content.flip-left {
+            left: auto;
+            right: 25px;
+        }
+
+        /* Flip below */
+        .d-content.flip-bottom {
+            top: 30px;
+            bottom: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="float-text show-on-scroll">
+            <span><a href="#">Scroll to top</a></span>
+        </div>
+        <div class="scrollbar-v show-on-scroll"></div>
+
+        <!-- page preloader begin -->
+        <div id="de-loader"></div>
+        <!-- page preloader close -->
+
+        <!-- header begin -->
+        <header class="header-light  scroll-light has-topbar ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="de-flex sm-pt10">
+                            <div class="de-flex-col">
+                                <!-- logo begin -->
+                                <div id="logo">
+                                    <a href="index.html">
+                                        <img class="logo-main" src="images/Spuer-Eco.png" alt="Super Eco Logo"
+                                            height="65">
+                                        <img class="logo-scroll" src="images/Spuer-Eco.png" alt="Super Eco Logo"
+                                            height="60">
+                                        <img class="logo-mobile" src="images/Spuer-Eco.png" alt="Super Eco Logo"
+                                            height="65">
+                                    </a>
+                                </div>
+                                <!-- logo close -->
+                            </div>
+                            <div class="de-flex-col header-col-mid ">
+                                <ul id="mainmenu">
+                                    <li><a class="menu-item" href="index.html">Home</a>
+                                    </li>
+                                    <li><a class="menu-item" href="#">Products</a>
+                                        <ul class="mega">
+                                            <li>
+                                                <div class="container">
+                                                    <div class="sb-menu p-4">
+                                                        <div class="row g-4">
+                                                            <div class="col-lg-3 text-center">
+                                                                <div
+                                                                    class="bg-grey p-2 rounded-10px relative hover text-center">
+                                                                    <a href="#">
+                                                                        <img src="images/misc/explore_t3.png"
+                                                                            class="w-100 relative z-1000 hover-scale-1-2"
+                                                                            alt="T1 FX">
+                                                                        <img src="images/misc/s-bg.png"
+                                                                            class="absolute start-10 top-10 w-20"
+                                                                            alt="T1 FX">
+                                                                    </a>
+
+                                                                    <div
+                                                                        class="absolute w-100 h-100 start-0 top-0 rounded-10px hover-bg-color">
+                                                                    </div>
+                                                                </div>
+                                                                <h4 class="mt-3 mb-1">T1 FX</h4>
+                                                                <p class="mb-0">Ride the Future: Silent, Smooth,
+                                                                    Electric</p>
+                                                            </div>
+                                                            <div class="col-lg-3 text-center">
+                                                                <div
+                                                                    class="bg-grey p-2 rounded-10px relative hover text-center">
+                                                                    <a href="#">
+                                                                        <img src="images/misc/s25i.png"
+                                                                            class="w-100 relative z-1000 hover-scale-1-2"
+                                                                            alt="SE3">
+                                                                        <img src="images/misc/s-bg.png"
+                                                                            class="absolute start-10 top-10 w-20"
+                                                                            alt="SE3">
+                                                                    </a>
+
+                                                                    <div
+                                                                        class="absolute w-100 h-100 start-0 top-0 rounded-10px hover-bg-color">
+                                                                    </div>
+                                                                </div>
+                                                                <h4 class="mt-3 mb-1">SE3</h4>
+                                                                <p class="mb-0">Redefining Motorcycle Performance.</p>
+
+                                                            </div>
+                                                            <div class="col-lg-3 text-center">
+                                                                <div
+                                                                    class="bg-grey p-2 rounded-10px relative hover text-center">
+                                                                    <a href="#">
+                                                                        <img src="images/misc/s25_pro.png"
+                                                                            class="w-100 relative z-1000 hover-scale-1-2"
+                                                                            alt="SEMAX">
+                                                                        <img src="images/misc/s-bg.png"
+                                                                            class="absolute start-10 top-10 w-20"
+                                                                            alt="SEMAX">
+                                                                    </a>
+
+                                                                    <div
+                                                                        class="absolute w-100 h-100 start-0 top-0 rounded-10px hover-bg-color">
+                                                                    </div>
+                                                                </div>
+                                                                <h4 class="mt-3 mb-1"><span
+                                                                        class="bg-color me-2 fs-15 px-2 rounded-5px text-uppercase anim-op-blink-to-light">New</span>SEMAX
+                                                                </h4>
+                                                                <p class="mb-0">Where Sustainability Meets Adventure.
+                                                                </p>
+
+                                                            </div>
+                                                            <div class="col-lg-3 text-center">
+                                                                <div
+                                                                    class="bg-grey p-2 rounded-10px relative hover text-center">
+                                                                    <a href="#">
+                                                                        <img src="images/misc/magnet.png"
+                                                                            class="w-100 relative z-1000 hover-scale-1-2"
+                                                                            alt="T1XL">
+                                                                        <img src="images/misc/s-bg.png"
+                                                                            class="absolute start-10 top-10 w-20"
+                                                                            alt="T1XL">
+                                                                    </a>
+
+                                                                    <div
+                                                                        class="absolute w-100 h-100 start-0 top-0 rounded-10px hover-bg-color">
+                                                                    </div>
+                                                                </div>
+                                                                <h4 class="mt-3 mb-1">T1XL</h4>
+                                                                <p class="mb-0">Ride the Future: Silent, Smooth,
+                                                                    Electric</p>
+
+                                                            </div>
+                                                            <div class="col-lg-3 text-center">
+                                                                <div
+                                                                    class="bg-grey p-2 rounded-10px relative hover text-center">
+                                                                    <a href="#">
+                                                                        <img src="images/misc/t1x3.png"
+                                                                            class="w-100 relative z-1000 hover-scale-1-2"
+                                                                            alt="S25">
+                                                                        <img src="images/misc/s-bg.png"
+                                                                            class="absolute start-10 top-10 w-20"
+                                                                            alt="S25">
+                                                                    </a>
+
+                                                                    <div
+                                                                        class="absolute w-100 h-100 start-0 top-0 rounded-10px hover-bg-color">
+                                                                    </div>
+                                                                </div>
+                                                                <h4 class="mt-3 mb-1"><span
+                                                                        class="bg-color me-2 fs-15 px-2 rounded-5px text-uppercase anim-op-blink-to-light">New</span>S25
+                                                                </h4>
+                                                                <p class="mb-0">Redefining Motorcycle Performance.</p>
+
+                                                            </div>
+                                                            <div class="col-lg-3 text-center">
+                                                                <div
+                                                                    class="bg-grey p-2 rounded-10px relative hover text-center">
+                                                                    <a href="#">
+                                                                        <img src="images/misc/tum-tum.png"
+                                                                            class="w-100 relative z-1000 hover-scale-1-2"
+                                                                            alt="S25i">
+                                                                        <img src="images/misc/s-bg.png"
+                                                                            class="absolute start-10 top-10 w-20"
+                                                                            alt="S25i">
+                                                                    </a>
+
+                                                                    <div
+                                                                        class="absolute w-100 h-100 start-0 top-0 rounded-10px hover-bg-color">
+                                                                    </div>
+                                                                </div>
+                                                                <h4 class="mt-3 mb-1">S25i</h4>
+                                                                <p class="mb-0">Redefining Motorcycle Performance.</p>
+
+                                                            </div>
+
+                                                            <div class="col-lg-3 text-center">
+                                                                <div
+                                                                    class="bg-grey p-2 rounded-10px relative hover text-center">
+                                                                    <a href="#">
+                                                                        <img src="images/misc/tum-tum.png"
+                                                                            class="w-100 relative z-1000 hover-scale-1-2"
+                                                                            alt="S25 Pro">
+                                                                        <img src="images/misc/s-bg.png"
+                                                                            class="absolute start-10 top-10 w-20"
+                                                                            alt="S25 Pro">
+                                                                    </a>
+
+                                                                    <div
+                                                                        class="absolute w-100 h-100 start-0 top-0 rounded-10px hover-bg-color">
+                                                                    </div>
+                                                                </div>
+                                                                <h4 class="mt-3 mb-1">S25 Pro</h4>
+                                                                <p class="mb-0">Redefining Motorcycle Performance.</p>
+
+                                                            </div>
+
+                                                            <div class="col-lg-3 text-center">
+                                                                <div
+                                                                    class="bg-grey p-2 rounded-10px relative hover text-center">
+                                                                    <a href="#">
+                                                                        <img src="images/misc/tum-tum.png"
+                                                                            class="w-100 relative z-1000 hover-scale-1-2"
+                                                                            alt="Bheema 2W">
+                                                                        <img src="images/misc/s-bg.png"
+                                                                            class="absolute start-10 top-10 w-20"
+                                                                            alt="Bheema 2W">
+                                                                    </a>
+
+                                                                    <div
+                                                                        class="absolute w-100 h-100 start-0 top-0 rounded-10px hover-bg-color">
+                                                                    </div>
+                                                                </div>
+                                                                <h4 class="mt-3 mb-1">Bheema 2W</h4>
+                                                                <p class="mb-0">Redefining Motorcycle Performance.</p>
+
+                                                            </div>
+
+                                                            <div class="col-lg-3 text-center">
+                                                                <div
+                                                                    class="bg-grey p-2 rounded-10px relative hover text-center">
+                                                                    <a href="#">
+                                                                        <img src="images/misc/tum-tum.png"
+                                                                            class="w-100 relative z-1000 hover-scale-1-2"
+                                                                            alt="Vazra 3W">
+                                                                        <img src="images/misc/s-bg.png"
+                                                                            class="absolute start-10 top-10 w-20"
+                                                                            alt="Vazra 3W">
+                                                                    </a>
+
+                                                                    <div
+                                                                        class="absolute w-100 h-100 start-0 top-0 rounded-10px hover-bg-color">
+                                                                    </div>
+                                                                </div>
+                                                                <h4 class="mt-3 mb-1">Vazra 3W</h4>
+                                                                <p class="mb-0">Redefining Motorcycle Performance.</p>
+
+                                                            </div>
+                                                            <div class="col-lg-3 text-center">
+                                                                <div
+                                                                    class="bg-grey p-2 rounded-10px relative hover text-center">
+                                                                    <a href="#">
+                                                                        <img src="images/misc/s1.png"
+                                                                            class="w-100 relative z-1000 hover-scale-1-2"
+                                                                            alt="Vazra Loader">
+                                                                        <img src="images/misc/s-bg.png"
+                                                                            class="absolute start-10 top-10 w-20"
+                                                                            alt="Vazra Loader">
+                                                                    </a>
+
+                                                                    <div
+                                                                        class="absolute w-100 h-100 start-0 top-0 rounded-10px hover-bg-color">
+                                                                    </div>
+                                                                </div>
+                                                                <h4 class="mt-3 mb-1"><span
+                                                                        class="bg-color me-2 fs-15 px-2 rounded-5px text-uppercase anim-op-blink-to-light">New</span>Vazra
+                                                                    Loader</h4>
+                                                                <p class="mb-0">Redefining Motorcycle Performance.</p>
+
+                                                            </div>
+                                                            <div class="col-lg-3 text-center">
+                                                                <div
+                                                                    class="bg-grey p-2 rounded-10px relative hover text-center">
+                                                                    <a href="#">
+                                                                        <img src="images/misc/all.png"
+                                                                            class="w-100 relative z-1000 hover-scale-1-2"
+                                                                            alt="">
+                                                                        <img src="images/misc/s-bg.png"
+                                                                            class="absolute start-10 top-10 w-20"
+                                                                            alt="">
+                                                                    </a>
+
+                                                                    <div
+                                                                        class="absolute w-100 h-100 start-0 top-0 rounded-10px hover-bg-color">
+                                                                    </div>
+                                                                </div>
+                                                                <h4 class="mt-3 mb-1">All Vehicles</h4>
+                                                                <p class="mb-0">View All Models.</p>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="menu-item" href="dealers.html">Dealer</a></li>
+                                    <li><a class="menu-item" href="#">Store Locator</a></li>
+                                    <li><a class="menu-item" href="about.html">About Us</a></li>
+                                    <li><a class="menu-item" href="contact.html">Contact </a></li>
+                                </ul>
+                            </div>
+                            <div class="de-flex-col">
+                                <div class="menu_side_area">
+                                    <a href="#" class="btn-main bg-dark">Book a Test Drive</a>
+                                    <span id="menu-btn"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header close -->
+        <!-- content begin -->
+        <div class="no-bottom no-top" id="content">
+
+            <div id="top"></div>
+
+            <section id="subheader" class="jarallax text-light bg-dark">
+                <img src="images/background/5.webp" class="jarallax-img" alt="">
+                <div class="container relative z-index-1000">
+                    <div class="container relative z-index-1000">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <h5 class=" wow fadeInUp mb-2"><span class="id-color">S25 PRO</span></h5>
+                                <h1>Where Sustainability
+                                    Meets
+                                    Adventure</h1>
+
+                                <div class="row mt-3 g-2 text-center">
+                                    <div class="col-4">
+                                        <div class="bg-dark rounded-10px lh-1-2em p-2">
+                                            <i class="fs-40 mb-1 id-color icofont-charging"></i>
+                                            <div class="fs-18 fw-bold">48-72 V</div>
+                                            <div class="fs-14 op-5">Voltage</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="bg-dark rounded-10px lh-1-2em p-2">
+                                            <i class="fs-40 mb-1 id-color icofont-thunder-light"></i>
+                                            <div class="fs-18 fw-bold">High Power, BLDC</div>
+                                            <div class="fs-14 op-5">Motor Power</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="bg-dark rounded-10px lh-1-2em p-2">
+                                            <i class="fs-40 mb-1 id-color icofont-thunder-light"></i>
+                                            <div class="fs-18 fw-bold">VRLA/ Li-ion</div>
+                                            <div class="fs-14 op-5">Battery</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-12 text-center">
+                            <div class="subtitle bg-grey text-dark wow fadeInUp mb-3">Spark Change</div>
+                            <h2 class="mb-0">Detailed Features</h2>
+                        </div>
+                        <div class="clearfix"></div>
+
+                        <div class="col-lg-8 offset-lg-2">
+                            <div class="relative">
+                                <img src="images/product/s25.png" class="img-fluid wow scaleIn" alt="E-Rickshaw">
+                                <!-- Voltage (replaces Modern Headlamp) -->
+
+                                <div class="de-dot mt-20" style="left:50%; top:40%" href="#">
+                                    <div class="d-content bg-color text-light">
+                                        <h5>USB Charging</h5>
+                                        USB Charging offers convenient on-the-go device power.
+                                    </div>
+                                </div>
+                                <!-- Parking Mode (replaces Large Wheels) -->
+                                <div class="de-dot mt-20" style="left:55%; top:62%" href="#">
+                                    <div class="d-content bg-color text-light">
+                                        <h5>Parking Mode</h5>
+                                        Parking Mode ensures secure and stable vehicle stops.
+                                    </div>
+                                </div>
+                                <!-- Battery (replaces Spacious Seat) -->
+                                <div class="de-dot mt-20" style="left:61%; top:41%" href="#">
+                                    <div class="d-content bg-color text-light">
+                                        <h5>Battery</h5>
+                                        VRLA/Li-ion Battery provides durable and reliable energy storage.
+                                    </div>
+                                </div>
+                                <!-- Motor Power (replaces Powerfull Motor) -->
+                                <div class="de-dot mt-20" style="left:12%; top:72%" href="#">
+                                    <div class="d-content bg-color text-light">
+                                        <h5>Tyres</h5>
+                                        Durable, all-terrain tyres ensure superior grip and smooth rides on every
+                                        surface.
+                                    </div>
+                                </div>
+                                <!-- Controller (new position) -->
+                                <div class="de-dot mt-20" style="left:36%; top:20%" href="#">
+                                    <div class="d-content bg-color text-light">
+                                        <h5>Controller</h5>
+                                        High Efficiency Controller optimizes energy use for smooth operation.
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-grey">
+                <div class="container ">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12 text-center">
+                            <div class="subtitle bg-white text-dark wow fadeInUp mb-3 mt-0">Detailed</div>
+                            <h2 class="mb-0">Specifications</h2>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-md-8 offset-lg-2 wow fadeInUp">
+                            <div class="accordion">
+                                <div class="accordion-section">
+                                    <div class="accordion-section-title" data-tab="#accordion-1">
+                                        <h4 class="mb-0 d-inline">Motor</h4>
+                                    </div>
+                                    <div class="accordion-section-content" id="accordion-1">
+                                        <ul>
+                                            <li>Type: Brushless DC motor</li>
+                                            <li>Power: 40 kW (53 hp)</li>
+                                            <li>Torque: 85 Nm</li>
+                                        </ul>
+                                    </div>
+                                    <div class="accordion-section-title" data-tab="#accordion-2">
+                                        <h4 class="mb-0 d-inline">Battery</h4>
+                                    </div>
+                                    <div class="accordion-section-content" id="accordion-2">
+                                        <ul>
+                                            <li>Type: Lithium-ion</li>
+                                            <li>Capacity: 10 kWh</li>
+                                            <li>Voltage: 96V</li>
+                                            <li>Charging time: 3 hours (fast charging)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="accordion-section-title" data-tab="#accordion-3">
+                                        <h4 class="mb-0 d-inline">Performance</h4>
+                                    </div>
+                                    <div class="accordion-section-content" id="accordion-3">
+                                        <ul>
+                                            <li>Top speed: 160 km/h (99 mph)</li>
+                                            <li>Acceleration (0-100 km/h): 4.5 seconds</li>
+                                            <li>Range: Up to 200 km (124 miles) on a single charge (city riding)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="accordion-section-title" data-tab="#accordion-4">
+                                        <h4 class="mb-0 d-inline">Chassis</h4>
+                                    </div>
+                                    <div class="accordion-section-content" id="accordion-4">
+                                        <ul>
+                                            <li>Frame: Steel trellis frame</li>
+                                            <li>Suspension: Front telescopic fork, rear mono-shock</li>
+                                            <li>Brakes: Front and rear disc brakes with ABS</li>
+                                        </ul>
+                                    </div>
+                                    <div class="accordion-section-title" data-tab="#accordion-5">
+                                        <h4 class="mb-0 d-inline">Dimensions</h4>
+                                    </div>
+                                    <div class="accordion-section-content" id="accordion-5">
+                                        <ul>
+                                            <li>Length: 2,000 mm</li>
+                                            <li>Width: 800 mm</li>
+                                            <li>Height: 1,100 mm</li>
+                                            <li>Seat height: 800 mm</li>
+                                            <li>Ground clearance: 150 mm</li>
+                                            <li>Weight: 180 kg (396 lbs)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="row g-4 gx-5 align-items-center">
+                        <div class="col-12 text-center">
+                            <div class="subtitle wow fadeInUp mb-3">Choose</div>
+                            <h2 class="mb-0">Color Variants</h2>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+                <div class="swiper-container">
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slide 1 -->
+                            <div
+                                class="swiper-slide text-center d-flex flex-column align-items-center justify-content-center">
+                                <img src="images/misc/m1.webp" class="img-fluid w-75 mw-100" alt="Red">
+                                <h3 class="mb-0">red</h3>
+                                <div class="fw-bold id-color">Bold & Passionate</div>
+                            </div>
+                            <!-- Slide 2 -->
+                            <div
+                                class="swiper-slide text-center d-flex flex-column align-items-center justify-content-center">
+                                <img src="images/misc/m1b.webp" class="img-fluid w-75 mw-100" alt="Black ">
+                                <h3 class="mb-0">Black </h3>
+                                <div class="fw-bold id-color">Sleek & Mysterious</div>
+                            </div>
+                            <!-- Slide 3 -->
+                            <div
+                                class="swiper-slide text-center d-flex flex-column align-items-center justify-content-center">
+                                <img src="images/misc/m1c.webp" class="img-fluid w-75 mw-100" alt="Silver ">
+                                <h3 class="mb-0">Silver </h3>
+                                <div class="fw-bold id-color">Elegant & Modern</div>
+                            </div>
+                            <div
+                                class="swiper-slide text-center d-flex flex-column align-items-center justify-content-center">
+                                <img src="images/misc/m1c.webp" class="img-fluid w-75 mw-100" alt="Blue  ">
+                                <h3 class="mb-0">Blue </h3>
+                                <div class="fw-bold id-color">Cool & Calm Vibe</div>
+                            </div>
+                            <div
+                                class="swiper-slide text-center d-flex flex-column align-items-center justify-content-center">
+                                <img src="images/misc/m1c.webp" class="img-fluid w-75 mw-100" alt="Green  ">
+                                <h3 class="mb-0">Green </h3>
+                                <div class="fw-bold id-color">Natural & Refreshing</div>
+                            </div>
+                        </div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </section>
+            <section class=" bg-grey">
+                <div class="container">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-12 text-center">
+                            <div class="subtitle bg-grey text-dark wow fadeInUp mb-3">Spark Change</div>
+                            <h2 class="mb-0">Advanced Features</h2>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-lg-4">
+                            <div class="mb-4 relative wow fadeInRight" data-wow-delay=".3s">
+                                <div class="absolute top-0 end-0">01</div>
+                                <i
+                                    class="bg-color text-light fs-48 p-2 absolute id-color icofont-thunder-light rounded-10px"></i>
+                                <div class="pl-90">
+                                    <h4>Electric Drive</h4>
+                                    <p class="mb-0">Unleash 48-72 V of electrifying power with a High Power BLDC motor!
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="mb-4 relative wow fadeInRight" data-wow-delay=".5s">
+                                <div class="absolute top-0 end-0">02</div>
+                                <i
+                                    class="bg-dark text-light fs-48 p-2 absolute id-color icofont-volume-mute rounded-10px"></i>
+                                <div class="pl-90">
+                                    <h4>Silent Power</h4>
+                                    <p class="mb-0">Enjoy whisper-quiet rides with our High Efficiency Controller
+                                        technology!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="images/misc/6.webp" class="img-fluid wow scaleIn" alt="E-Rickshaw">
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="mb-4 relative wow fadeInLeft" data-wow-delay=".3s">
+                                <div class="absolute top-0 start-0">03</div>
+                                <i
+                                    class="bg-color text-light fs-48 p-2 absolute end-0 id-color icofont-leaf rounded-10px"></i>
+                                <div class="pr-90">
+                                    <h4 class="text-end">Zero Emissions</h4>
+                                    <p class="text-end mb-0">Ride green with a VRLA/Li-ion Battery and zero carbon
+                                        footprint!</p>
+                                </div>
+                            </div>
+
+                            <div class="mb-4 relative wow fadeInLeft" data-wow-delay=".3s">
+                                <div class="absolute top-0 start-0">04</div>
+                                <i
+                                    class="bg-dark text-light fs-48 p-2 absolute end-0 id-color icofont-road rounded-10px"></i>
+                                <div class="pr-90">
+                                    <h4 class="text-end">Longer Range</h4>
+                                    <p class="text-end mb-0">Go further with durable energy and a 24/36 Months*
+                                        Warranty!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section class="bg-color text-light pt40 pb40">
+                <div class="container">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-9">
+                            <h3 class="mb-1">Ready to drive into the future?</h3>
+                        </div>
+
+                        <div class="col-lg-3 text-lg-end text-start">
+                            <a class="btn-main bg-dark" href="contact.html">Book a Test Drive</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <!-- content close -->
+
+        <!-- footer begin -->
+        <footer class="section-dark">
+            <div class="container">
+                <div class="row gx-5">
+                    <div class="col-lg-4 col-sm-6">
+                        <img src="images/logo-white.webp" alt="">
+                        <div class="spacer-20"></div>
+                        <p>Autoev are leading the charge towards a more sustainable future, offering a thrilling blend
+                            of cutting-edge technology, zero emissions, and unparalleled efficiency. Our journey towards
+                            a cleaner, greener world with electric vehicles leading the way.</p>
+
+                        <div class="social-icons mb-sm-30">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 order-lg-1 order-sm-2">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="widget">
+                                    <h5>Company</h5>
+                                    <ul>
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="history.html">History</a></li>
+                                        <li><a href="testimonials.html">Testimonials</a></li>
+                                        <li><a href="careers.html">Careers</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="widget">
+                                    <h5>Our Products</h5>
+                                    <ul>
+                                        <li><a href="vehicle-single-1.html">Autoev R100</a></li>
+                                        <li><a href="vehicle-single-2.html">Autoev R200</a></li>
+                                        <li><a href="vehicle-single-3.html">Autoev R300</a></li>
+                                        <li><a href="vehicles.html">All Vehicles</a></li>
+                                        <li><a href="dealers.html">Dealers</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 order-lg-2 order-sm-1">
+                        <div class="widget">
+                            <div class="fw-bold text-white"><i class="icofont-location-pin me-2 id-color"></i>Showroom
+                                Location</div>
+                            100 S Main St, Los Angeles, CA
+
+                            <div class="spacer-20"></div>
+
+                            <div class="fw-bold text-white"><i class="icofont-envelope me-2 id-color"></i>Send a Message
+                            </div>
+                            contact@autoev.com
+
+                            <div class="spacer-20"></div>
+
+                            <div class="fw-bold text-white"><i class="icofont-envelope me-2 id-color"></i>Make a Phone
+                                Call</div>
+                            +929 333 9296 / +929 333 9297
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="subfooter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="de-flex">
+                                <div class="de-flex-col">
+                                    Copyright 2024 - Autoev by Designesia
+                                </div>
+                                <ul class="menu-simple">
+                                    <li><a href="#">Terms &amp; Conditions</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer close -->
+    </div>
+
+
+
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/designesia.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/custom-marquee.js"></script>
+    <script src="js/custom-swiper-1.js"></script>
+    <script>
+        document.querySelectorAll('.de-dot').forEach(dot => {
+            dot.addEventListener('mouseenter', function () {
+                this.classList.add('show-tooltip');
+
+                const tooltip = this.querySelector('.d-content');
+                const dotRect = this.getBoundingClientRect(); // Position of the dot
+                const tooltipRect = tooltip.getBoundingClientRect(); // Position and size of the tooltip
+                const viewportWidth = window.innerWidth;
+                const viewportHeight = window.innerHeight;
+
+                // Reset any previous flip classes
+                tooltip.classList.remove('flip-left', 'flip-bottom');
+
+                // Check horizontal overflow (left and right)
+                if (tooltipRect.right > viewportWidth) {
+                    // Tooltip overflows on the right, flip it to the left
+                    tooltip.classList.add('flip-left');
+                } else if (tooltipRect.left < 0) {
+                    // Tooltip overflows on the left, remove flip-left and adjust manually if needed
+                    tooltip.classList.remove('flip-left');
+                    tooltip.style.left = '25px'; // Reset to default left position
+                }
+
+                // Check vertical overflow (top and bottom)
+                if (tooltipRect.top < 0) {
+                    // Tooltip overflows at the top, flip it below
+                    tooltip.classList.add('flip-bottom');
+                } else if (tooltipRect.bottom > viewportHeight) {
+                    // Tooltip overflows at the bottom, move it above
+                    tooltip.classList.remove('flip-bottom');
+                    tooltip.style.top = `-${tooltipRect.height + 10}px`; // Position above the dot
+                } else {
+                    // Reset to default top position if no overflow
+                    tooltip.style.top = '-70px';
+                }
+            });
+
+            dot.addEventListener('mouseleave', function () {
+                this.classList.remove('show-tooltip');
+                const tooltip = this.querySelector('.d-content');
+                // Reset styles when tooltip hides
+                tooltip.classList.remove('flip-left', 'flip-bottom');
+                tooltip.style.top = '-70px'; // Reset to default
+                tooltip.style.left = '25px'; // Reset to default
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
