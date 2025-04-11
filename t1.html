@@ -23,49 +23,10 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/coloring.css" rel="stylesheet" type="text/css">
     <link href="css/swiper-custom.css" rel="stylesheet" type="text/css">
-
+    <link href="css/custome.css" rel="stylesheet " type="text/css">
     <!-- color scheme -->
     <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css">
-    <style>
-        .d-content {
-            position: absolute;
-            top: -70px;
-            /* Default position */
-            left: 25px;
-            /* Default position */
-            color: #fff;
-            padding: 8px 12px;
-            border-radius: 8px;
-            min-width: 140px;
-            max-width: 200px;
-            font-size: 12px;
-            z-index: 10;
-            opacity: 0;
-            transform: translateY(10px);
-            transition: opacity 0.7s ease, transform 0.7s ease;
-            pointer-events: none;
-        }
 
-        /* Show tooltip */
-        .de-dot:hover .d-content,
-        .de-dot.show-tooltip .d-content {
-            opacity: 1;
-            transform: translateY(0);
-            pointer-events: auto;
-        }
-
-        /* Flip left */
-        .d-content.flip-left {
-            left: auto;
-            right: 25px;
-        }
-
-        /* Flip below */
-        .d-content.flip-bottom {
-            top: 30px;
-            bottom: auto;
-        }
-    </style>
 </head>
 
 <body>
@@ -426,7 +387,7 @@
                                 <!-- Spacious Legroom (replaces Large Wheels) -->
                                 <div class="de-dot mt-20" style="left:50%; top:50%" href="#">
                                     <div class="d-content bg-color text-light">
-                                        <h5>PSpacious Legroom</h5>
+                                        <h5>Spacious Legroom</h5>
                                         Ample leg space for rider comfort during long rides.
                                     </div>
                                 </div>
@@ -438,23 +399,20 @@
                                     </div>
                                 </div>
                                 <!-- Motor Power (replaces Powerfull Motor) -->
-                                <div class="de-dot mt-20" style="left:12%; top:72%" href="#">
+                                <div class="de-dot mt-20" style="left:30%; top:40%" href="#">
                                     <div class="d-content bg-color text-light">
                                         <h5>Front Headlight</h5>
-                                        Durable, all-terrain tyres ensure superior grip and smooth rides on every
-                                        surface.
+                                        Bright LED headlight for enhanced visibility and safety.
+                                    </div>
+                                </div>
+                                <div class="de-dot mt-20" style="left:57%; top:10%" href="#">
+                                    <div class="d-content bg-color text-light">
+                                        <h5>Advanced Controller with Reverse</h5>
+                                        High-efficiency controller with integrated reverse mode for easy maneuvering.
                                     </div>
                                 </div>
                                 <!-- Controller (new position) -->
-                                <div class="de-dot mt-20" style="left:36%; top:40%" href="#">
-                                    <div class="d-content bg-color text-light">
-                                        <h5>Front Headlight</h5>
-                                        Durable, all-terrain tyres ensure superior grip and smooth rides on every
-                                        surface.
-                                    </div>
 
-
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -774,54 +732,9 @@
     <script src="js/swiper.js"></script>
     <script src="js/custom-marquee.js"></script>
     <script src="js/custom-swiper-1.js"></script>
-    <script>
-        document.querySelectorAll('.de-dot').forEach(dot => {
-            dot.addEventListener('mouseenter', function () {
-                this.classList.add('show-tooltip');
+    <script src="js/custome.js"></script>
 
-                const tooltip = this.querySelector('.d-content');
-                const dotRect = this.getBoundingClientRect(); // Position of the dot
-                const tooltipRect = tooltip.getBoundingClientRect(); // Position and size of the tooltip
-                const viewportWidth = window.innerWidth;
-                const viewportHeight = window.innerHeight;
 
-                // Reset any previous flip classes
-                tooltip.classList.remove('flip-left', 'flip-bottom');
-
-                // Check horizontal overflow (left and right)
-                if (tooltipRect.right > viewportWidth) {
-                    // Tooltip overflows on the right, flip it to the left
-                    tooltip.classList.add('flip-left');
-                } else if (tooltipRect.left < 0) {
-                    // Tooltip overflows on the left, remove flip-left and adjust manually if needed
-                    tooltip.classList.remove('flip-left');
-                    tooltip.style.left = '25px'; // Reset to default left position
-                }
-
-                // Check vertical overflow (top and bottom)
-                if (tooltipRect.top < 0) {
-                    // Tooltip overflows at the top, flip it below
-                    tooltip.classList.add('flip-bottom');
-                } else if (tooltipRect.bottom > viewportHeight) {
-                    // Tooltip overflows at the bottom, move it above
-                    tooltip.classList.remove('flip-bottom');
-                    tooltip.style.top = `-${tooltipRect.height + 10}px`; // Position above the dot
-                } else {
-                    // Reset to default top position if no overflow
-                    tooltip.style.top = '-70px';
-                }
-            });
-
-            dot.addEventListener('mouseleave', function () {
-                this.classList.remove('show-tooltip');
-                const tooltip = this.querySelector('.d-content');
-                // Reset styles when tooltip hides
-                tooltip.classList.remove('flip-left', 'flip-bottom');
-                tooltip.style.top = '-70px'; // Reset to default
-                tooltip.style.left = '25px'; // Reset to default
-            });
-        });
-    </script>
 
 
 </body>
