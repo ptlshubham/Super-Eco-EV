@@ -67,4 +67,8 @@
         max-width: 80vw;
         /* Prevent overflow on small screens */
     }
+
+    .background-colorgray{
+        background-color:rgb(240, 240, 240);
+    }
 }
