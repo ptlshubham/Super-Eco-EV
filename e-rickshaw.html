@@ -66,6 +66,35 @@
             top: 30px;
             bottom: auto;
         }
+
+        /* dots hide in movile view start below */
+
+        /* Mobile view adjustments */
+        @media (max-width: 767px) {
+            .relative {
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+            }
+
+            .product-img {
+                width: 100%;
+                height: auto;
+            }
+
+            /* Hide de-dot and its content in mobile view */
+            .de-dot {
+                display: none !important;
+                /* Ensures dots are hidden */
+            }
+
+            .de-dot .d-content {
+                display: none !important;
+                /* Ensures tooltips are hidden */
+            }
+        }
+
+        /* dots hide in movile view  end */
     </style>
 </head>
 
