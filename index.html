@@ -91,6 +91,19 @@
                 /* Further adjust height for smaller screens */
             }
         }
+
+        /* Remove top margin by default (desktop) */
+        #content {
+            margin-top: 0;
+        }
+
+        /* Apply top margin only for mobile */
+        @media (max-width: 768px) {
+            #content {
+                margin-top: 3rem;
+                /* equivalent to mt-5 in Bootstrap (5 x 0.5rem) */
+            }
+        }
     </style>
 </head>
 
