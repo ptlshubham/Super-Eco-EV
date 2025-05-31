@@ -362,25 +362,35 @@
 
 
                             <form name="contactForm" id="contact_form" class="position-relative z1000" method="post"
-                                action="#">
+                                action="php/contact-form.php">
+                                <div id="success_message" class='success'>
+                                    Your message has been sent successfully. Refresh this page if you want to send more
+                                    messages.
+                                </div>
+                                <div id="error_message" class='error'>
+                                    Sorry there was an error sending your form.
+                                </div>
                                 <div class="row gx-4">
                                     <div class="col-lg-6 col-md-6 mb10">
                                         <div class="field-set">
                                             <span class="d-label fw-bold">Name</span>
-                                            <input type="text" name="Name" id="name" class="form-control"
+                                            <input type="text" name="name" id="name" class="form-control"
                                                 placeholder="Your Name" required>
+
                                         </div>
 
                                         <div class="field-set">
                                             <span class="d-label fw-bold">Email</span>
-                                            <input type="text" name="Email" id="email" class="form-control"
+                                            <input type="email" name="email" id="email" class="form-control"
                                                 placeholder="Your Email" required>
+
                                         </div>
 
                                         <div class="field-set">
                                             <span class="d-label fw-bold">Phone</span>
                                             <input type="text" name="phone" id="phone" class="form-control"
-                                                placeholder="Your Phone" required>
+                                                placeholder="Your Phone"> <!-- Optional -->
+
                                         </div>
                                     </div>
 
@@ -389,23 +399,18 @@
                                             <span class="d-label fw-bold">Message</span>
                                             <textarea name="message" id="message" class="form-control"
                                                 placeholder="Your Message" required></textarea>
+
                                         </div>
                                     </div>
                                 </div>
 
 
-                                <div class="g-recaptcha" data-sitekey="6LfLxmEqAAAAAH7ZENgz1fBT47UpJfLJ6HDRQc19"></div>
+                                <div class="g-recaptcha" data-sitekey="6LdKHFErAAAAAFfg1hemfObvABHR6Jb8mFQNTIPd"></div>
                                 <div id='submit' class="mt20">
                                     <input type='submit' id='send_message' value='Send Message' class="btn-main">
                                 </div>
 
-                                <div id="success_message" class='success'>
-                                    Your message has been sent successfully. Refresh this page if you want to send more
-                                    messages.
-                                </div>
-                                <div id="error_message" class='error'>
-                                    Sorry there was an error sending your form.
-                                </div>
+
                             </form>
 
                         </div>
@@ -576,8 +581,44 @@
     ================================================== -->
     <script src="js/plugins.js"></script>
     <script src="js/designesia.js"></script>
-    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
     <script src="form.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#contact_form').on('submit', function (e) {
+                e.preventDefault();
+                var form = $(this);
+                var button = $('#send_message');
+                button.val('Sending...').prop('disabled', true);
+
+                $.ajax({
+                    url: form.attr('action'),
+                    type: form.attr('method'),
+                    data: form.serialize(),
+                    dataType: 'json',
+                    success: function (response) {
+                        if (response.success) {
+                            $('#success_message').show();
+                            $('#error_message').hide();
+                            form[0].reset();
+                            grecaptcha.reset();
+                        } else {
+                            $('#error_message').text(response.message).show();
+                            $('#success_message').hide();
+                        }
+                        button.val('Send Message').prop('disabled', false);
+                    },
+                    error: function () {
+                        $('#error_message').text('Unexpected error occurred.').show();
+                        $('#success_message').hide();
+                        button.val('Send Message').prop('disabled', false);
+                    }
+                });
+            });
+        });
+    </script>
 
 
 </body>
