@@ -18,10 +18,10 @@ $mail = new PHPMailer(true);
 try {
     // SMTP Configuration
     $mail->isSMTP();
-    $mail->Host       = 'smtp.hostinger.com';
+    $mail->Host       = 'smtp.gmail.com';
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'het@keryar.com';
-    $mail->Password   = 'Het@2210';
+    $mail->Username   = 'Support@superecoev.in';
+    $mail->Password   = 'Support3303#';
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port       = 465;
 
@@ -58,10 +58,10 @@ try {
     }
 
     // Send Email
-    $mail->setFrom('het@keryar.com', 'Super Eco');
+    $mail->setFrom('Support@superecoev.in', 'Super Eco');
     $mail->addAddress($contact_email, $form_name);
-    $mail->addReplyTo('het@keryar.com', 'Super Eco');
-    $mail->addAddress('het@keryar.com');
+    $mail->addReplyTo('Support@superecoev.in', 'Super Eco');
+    $mail->addAddress('Support@superecoev.in');
 
     $mail->isHTML(true);
     $mail->Subject = 'Thank You for Contacting Super Eco';
